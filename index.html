@@ -3,132 +3,259 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Professional Résumé</title>
+    <title>Maryam Suleiman Aliyu - Résumé</title>
     <style>
         :root {
-            --primary: #2563eb;
-            --dark: #1e293b;
-            --light: #f8fafc;
-            --text: #334155;
+            --primary: #0284c7; /* Professional tech blue */
+            --dark: #0f172a;    /* Deep slate */
+            --light: #f8fafc;   /* Light grey background */
+            --text: #334155;    /* Soft charcoal text */
+            --border: #e2e8f0;
         }
+        
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             color: var(--text);
             background-color: var(--light);
             margin: 0;
             padding: 40px 20px;
         }
-        .container {
+
+        .resume-container {
             max-width: 800px;
             margin: 0 auto;
-            background: white;
+            background: #ffffff;
             padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
         }
+
         header {
-            border-bottom: 2px solid #e2e8f0;
+            border-bottom: 3px solid var(--primary);
             padding-bottom: 20px;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
+
         h1 {
             color: var(--dark);
             margin: 0 0 10px 0;
-            font-size: 2.5rem;
+            font-size: 2.2rem;
+            letter-spacing: -0.5px;
         }
+
         .contact-info {
             display: flex;
-            gap: 15px;
+            gap: 15px 25px;
             flex-wrap: wrap;
             font-size: 0.9rem;
             color: #64748b;
         }
+
         .contact-info a {
             color: var(--primary);
             text-decoration: none;
+            font-weight: 500;
         }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
         h2 {
-            color: var(--primary);
-            border-bottom: 1px solid #e2e8f0;
-            padding-bottom: 5px;
-            margin-top: 30px;
-        }
-        .project, .job {
-            margin-bottom: 20px;
-        }
-        .title-bar {
-            display: flex;
-            justify-content: space-between;
-            font-weight: bold;
             color: var(--dark);
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid var(--border);
         }
+
+        p {
+            margin: 0 0 10px 0;
+        }
+
+        /* List Styling */
+        ul {
+            margin: 0 0 20px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        /* Skills section badges */
         .skills-list {
             display: flex;
-            gap: 10px;
+            gap: 8px;
             flex-wrap: wrap;
             padding: 0;
             list-style: none;
+            margin-bottom: 10px;
         }
+
         .skills-list li {
-            background: #eff6ff;
+            background: #f0f9ff;
             color: var(--primary);
-            padding: 5px 12px;
-            border-radius: 15px;
+            padding: 6px 14px;
+            border-radius: 20px;
             font-size: 0.85rem;
-            font-weight: 500;
+            font-weight: 600;
+            border: 1px solid #e0f2fe;
+            margin: 0;
+        }
+
+        /* Experience and Education Blocks */
+        .item-group {
+            margin-bottom: 20px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 5px;
+        }
+
+        .item-title {
+            font-weight: 700;
+            color: var(--dark);
+            font-size: 1.05rem;
+        }
+
+        .item-meta {
+            font-size: 0.9rem;
+            color: #64748b;
+            font-style: italic;
+        }
+
+        .item-date {
+            font-size: 0.9rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Responsive spacing for smaller screens */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px 10px;
+            }
+            .resume-container {
+                padding: 20px;
+            }
+            .item-header {
+                flex-direction: column;
+                gap: 2px;
+            }
         }
     </style>
 </head>
 <body>
 
-<div class="container">
+<div class="resume-container">
     <header>
-        <!-- Replace with your actual details -->
-        <h1>Your Full Name</h1>
+        <h1>Maryam Suleiman Aliyu</h1>
         <div class="contact-info">
-            <span>📧 your.email@example.com</span>
-            <span>📱 +123 456 7890</span>
-            <span>📍 Your City, Country</span>
-            <a href="https://linkedin.com/in/yourusername" target="_blank">🔗 LinkedIn</a>
+            <span>📧 <a href="mailto:maryamsuleimanaliyu731@gmail.com">maryamsuleimanaliyu731@gmail.com</a></span>
+            <span>📱 +2349018468398</span>
+            <span>📍 Adamawa, Nigeria</span>
+            <span>🔗 <a href="https://github.com/Mairamjo" target="_blank">GitHub Profile</a></span>
         </div>
     </header>
 
     <section>
         <h2>Professional Summary</h2>
-        <p>A motivated and detail-oriented professional/student looking to leverage skills in technology, web development, and problem-solving. Eager to contribute to innovative projects and continue learning in a collaborative environment.</p>
+        <p>A highly motivated and detail-oriented individual aspiring to build a career in technology and software development. Quick learner with fundamental knowledge of the Python programming language, UI/UX, and problem-solving, eager to contribute to collaborative projects.</p>
     </section>
 
     <section>
         <h2>Skills</h2>
         <ul class="skills-list">
-            <li>HTML5 & CSS3</li>
-            <li>Git & GitHub</li>
-            <li>JavaScript</li>
+            <li>Communication skills</li>
+            <li>Technical Writing</li>
             <li>Problem Solving</li>
-            <li>Project Management</li>
+            <li>Team Collaboration</li>
+            <li>Python Programming</li>
+            <li>UI/UX Design</li>
         </ul>
     </section>
 
     <section>
         <h2>Projects</h2>
-        <div class="project">
-            <div class="title-bar">
-                <span>Personal Portfolio Website</span>
-                <span>2026</span>
+        
+        <div class="item-group">
+            <div class="item-header">
+                <span class="item-title">Online Resume Website</span>
+                <span class="item-date">July 2026</span>
             </div>
-            <p>Designed and deployed a responsive personal resume website using HTML5 and CSS. Hosted publicly on GitHub Pages.</p>
+            <ul>
+                <li>Created a clean, semantic HTML-only resume from scratch.</li>
+                <li>Deployed and hosted the webpage using GitHub Pages for public access.</li>
+            </ul>
+        </div>
+
+        <div class="item-group">
+            <div class="item-header">
+                <span class="item-title">E-Hospital & E-Library Mobile Concepts</span>
+                <span class="item-date">July 2026</span>
+            </div>
+            <ul>
+                <li>Designed user interfaces and interactive flow-maps for hospital administration screens.</li>
+                <li>Created clean, modern digital layouts for educational library catalog systems.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+        
+        <div class="item-group">
+            <div class="item-header">
+                <span class="item-title">UI/UX Designer</span>
+                <span class="item-date">2021</span>
+            </div>
+            <div class="item-meta">Zuriboard Cohort</div>
+            <ul>
+                <li>Collaborated on design solutions for interactive health-tech application modules.</li>
+                <li>Engineered user-centric UI components for virtual library reference tools.</li>
+            </ul>
         </div>
     </section>
 
     <section>
         <h2>Education</h2>
-        <div class="job">
-            <div class="title-bar">
-                <span>B.Sc. in Computer Science (or your major)</span>
-                <span>2022 - Present</span>
+        
+        <div class="item-group">
+            <div class="item-header">
+                <span class="item-title">B.Eng in Computer Engineering</span>
+                <span class="item-date">2021 - Present</span>
             </div>
-            <p>Your University Name — GPA or notable achievements</p>
+            <div class="item-meta">Ahmadu Bello University</div>
+            <p>Relevant coursework: Introduction to Programming, Machine Learning, and Software Development.</p>
+        </div>
+
+        <div class="item-group">
+            <div class="item-header">
+                <span class="item-title">Secondary School Certificate</span>
+                <span class="item-date">Graduated 2020</span>
+            </div>
+            <div class="item-meta">Nigerian Tulip International College</div>
+        </div>
+        
+        <div class="item-group">
+            <div class="item-header">
+                <span class="item-title">Primary School Certificate</span>
+                <span class="item-date">Graduated 2013</span>
+            </div>
+            <div class="item-meta">Abti International Nur/Pri</div>
         </div>
     </section>
 </div>
